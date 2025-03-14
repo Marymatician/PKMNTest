@@ -1,0 +1,13 @@
+{
+    "Garchomp": {
+    "dexNum": null,
+    "name": "Garchomp",
+    "types": ["Dragon", "Ground"],
+    "genderRatio": {"M": 0.5, "F": 0.5},
+    "baseStats": {"HP": 108, "ATK": 130, "DEF": 95, "SPA": 80, "SPD": 85, "SPE": 102},
+    "abilities": null,
+    "height": 1.9,
+    "weight": 95.0,
+    "eggGroups": ["Monster", "Dragon"]
+    }
+}

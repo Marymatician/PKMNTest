@@ -1,0 +1,3 @@
+/home/mary/Documents/PKMNTest/build/CMakeFiles/PKMNTest.dir
+/home/mary/Documents/PKMNTest/build/CMakeFiles/edit_cache.dir
+/home/mary/Documents/PKMNTest/build/CMakeFiles/rebuild_cache.dir

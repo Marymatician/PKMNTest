@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/mary/Documents/PKMNTest/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/PKMNTest.dir/src/main.cpp.o -c /home/mary/Documents/PKMNTest/src/main.cpp",
+  "file": "/home/mary/Documents/PKMNTest/src/main.cpp",
+  "output": "CMakeFiles/PKMNTest.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/mary/Documents/PKMNTest/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/PKMNTest.dir/src/LTexture.cpp.o -c /home/mary/Documents/PKMNTest/src/LTexture.cpp",
+  "file": "/home/mary/Documents/PKMNTest/src/LTexture.cpp",
+  "output": "CMakeFiles/PKMNTest.dir/src/LTexture.cpp.o"
+}
+]

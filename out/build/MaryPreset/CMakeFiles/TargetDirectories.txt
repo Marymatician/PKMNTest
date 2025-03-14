@@ -1,0 +1,5 @@
+/home/mary/Documents/PKMNTest/out/build/MaryPreset/CMakeFiles/PKMNTest.dir
+/home/mary/Documents/PKMNTest/out/build/MaryPreset/CMakeFiles/edit_cache.dir
+/home/mary/Documents/PKMNTest/out/build/MaryPreset/CMakeFiles/rebuild_cache.dir
+/home/mary/Documents/PKMNTest/out/build/MaryPreset/_deps/json-build/CMakeFiles/edit_cache.dir
+/home/mary/Documents/PKMNTest/out/build/MaryPreset/_deps/json-build/CMakeFiles/rebuild_cache.dir
