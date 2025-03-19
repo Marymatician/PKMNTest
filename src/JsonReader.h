@@ -7,6 +7,11 @@
 class JsonReader
 {
     public:
+    //Initialise the Class
+    JsonReader();
+
+    //Destroy the Class
+    ~JsonReader();
     private:
 };
 
