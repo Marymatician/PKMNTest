@@ -4,6 +4,7 @@
 #include <string>
 
 #include "Pokemon.h"
+#include "PokeDex.h"
 #include "PokemonTeam.h"
 #include "LTexture.h"
 
