@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/PKMNTest.dir/src/main.cpp.o CMakeFiles/PKMNTest.dir/src/LTexture.cpp.o -o PKMNTest  -lSDL2 -lSDL2_image
