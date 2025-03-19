@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/PKMNTest.dir/src/main.cpp.o CMakeFiles/PKMNTest.dir/src/LTexture.cpp.o CMakeFiles/PKMNTest.dir/src/Pokemon.cpp.o CMakeFiles/PKMNTest.dir/src/BattleController.cpp.o CMakeFiles/PKMNTest.dir/src/PokemonTeam.cpp.o CMakeFiles/PKMNTest.dir/src/JsonReader.cpp.o CMakeFiles/PKMNTest.dir/src/PokeDex.cpp.o -o PKMNTest  -lSDL2 -lSDL2_image
