@@ -2,7 +2,7 @@
 
 BattleController::BattleController(PokemonTeam &allyTeam, PokemonTeam &enemyTeam) : allyTeam(allyTeam), enemyTeam(enemyTeam)
 {
-    weather = NONE;
+    weather = WeatherConditions::NONE;
 }
 
 BattleController::~BattleController()

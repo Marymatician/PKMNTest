@@ -20,7 +20,7 @@ class BattleController
     PokemonTeam& enemyTeam;
 
     //Weather - as an enum
-    enum WeatherConditions
+    enum class WeatherConditions
     {
         NONE,
         SUN,

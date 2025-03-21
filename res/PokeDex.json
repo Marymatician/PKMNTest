@@ -1,13 +1,24 @@
 {
     "Garchomp": {
-    "dexNum": null,
-    "name": "Garchomp",
-    "types": ["Dragon", "Ground"],
-    "genderRatio": {"M": 0.5, "F": 0.5},
-    "baseStats": {"HP": 108, "ATK": 130, "DEF": 95, "SPA": 80, "SPD": 85, "SPE": 102},
-    "abilities": null,
-    "height": 1.9,
-    "weight": 95.0,
-    "eggGroups": ["Monster", "Dragon"]
+        "name": "Garchomp",
+        "dexNum": 0,
+        "types": ["Dragon", "Ground"],
+        "baseStats": {"HP": 108, "ATK": 130, "DEF": 95, "SPA": 80, "SPD": 85, "SPE": 102},
+        "abilities": {"0":"Sand Veil", "H":"Rough Skin"},
+        "genderRatio": 0.5,
+        "height": 1.9,
+        "weight": 95.0,
+        "eggGroups": ["Monster", "Dragon"]
+    },
+    "Blaziken": {
+        "name":"Blaziken",
+        "dexNum": 0,
+        "types": ["Fire", "Fighting"],
+        "baseStats": {"HP": 80, "ATK": 120, "DEF": 70, "SPA": 110, "SPD": 70, "SPE": 80},
+        "abilities": {"0": "Blaze", "H": "Speed Boost"},
+        "genderRatio": 0.875,
+        "height": 1.9,
+        "weight": 52.0,
+        "eggGroups": ["Field"]
     }
 }

@@ -127,11 +127,9 @@ int main(int argc, char* args[])
 
             //////////////////////////////////////////////////////////////////////////////////////////
 
-            Pokemon allyMon;
-            allyMon.setSpecies("Blaziken");
+            Pokemon allyMon("Blaziken");
 
-            Pokemon enemyMon;
-            enemyMon.setSpecies("Garchomp");
+            Pokemon enemyMon("Garchomp");
             
             LTexture allyMonSprite;
             LTexture enemyMonSprite;
@@ -139,8 +137,8 @@ int main(int argc, char* args[])
             PokemonTeam allyTeam(allyMon);
             PokemonTeam enemyTeam(enemyMon);
 
-            allyMonSprite.loadFromFile(gRenderer, "../../../res/" + (allyTeam[0]).getSpecies()+".png");
-            enemyMonSprite.loadFromFile(gRenderer, "../../../res/" + (enemyTeam[0]).getSpecies()+".png");
+            allyMonSprite.loadFromFile(gRenderer, "../../../res/Blaziken.png");
+            enemyMonSprite.loadFromFile(gRenderer, "../../../res/Garchomp.png");
 
             //////////////////////////////////////////////////////////////////////////////////////////
 
