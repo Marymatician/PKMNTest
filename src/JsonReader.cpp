@@ -23,3 +23,8 @@ nlohmann::json JsonReader::fetchJson(std::string path)
 
     return jsonObject;
 }
+
+nlohmann::json JsonReader::fetchJsonListEntry(std::string path, int entry)
+{
+    return (fetchJson(path))[entry];
+}

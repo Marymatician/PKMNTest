@@ -5,13 +5,14 @@
 #include "Abilities.h"
 #include "Species.h"
 #include "Nature.h"
+#include "Gender.h"
 
 //A class representing all the attributes a Pokemon has.
 class Pokemon
 {
     public:
-    //Initialize the classS
-    Pokemon(std::string stringSpecies);
+    //Initialize the class
+    Pokemon(nlohmann::json JSONMon);
 
     //Deallocate Memory
     ~Pokemon();
@@ -22,22 +23,16 @@ class Pokemon
 
     //the nickname of the pokemon
     std::string nickname;
-    //The level of the Pokemon
-    int level;
-    //its experience
-    int xp;
 
     //its ability, represented as an enum.
     AbilityEnum ability;
-
-    //Is it shiny?
-    bool shiny;
 
     //Its nature, represented as an Enum.
     Nature nature;
 
     //its gender
-    std::string gender;
+    Gender gender;
+
     //Its IVs
     int HPIV;
     int ATKIV;
@@ -45,6 +40,7 @@ class Pokemon
     int SPAIV;
     int SPDIV;
     int SPEIV;
+
     //Its EVs
     int HPEV;
     int ATKEV;
@@ -52,6 +48,13 @@ class Pokemon
     int SPAEV;
     int SPDEV;
     int SPEEV;
+
+    //The level of the Pokemon
+    int level;
+    //its experience
+    int xp;
+    //Is it shiny?
+    bool shiny;
 };
 
 #endif

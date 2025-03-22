@@ -1,0 +1,12 @@
+[
+    {
+        "species" : "Blaziken",
+        "ability" : "H",
+        "EVs" : {"ATK" : 252, "SPE" : 252, "HP" : 4},
+        "IVs" : {},
+        "nature" : "Jolly",
+        "moves" : ["Close Combat", "Flare Blitz", "Swords Dance", "Protect"],
+        "gender" : "M",
+        "level": 50
+    }
+]

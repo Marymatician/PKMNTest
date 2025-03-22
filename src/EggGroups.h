@@ -4,8 +4,7 @@
 #include <map>
 #include <string>
 
-enum class EggGroupsEnum
-{
+enum class EggGroupsEnum {
     MINERAL,
     AMORPHOUS,
     GRASS,

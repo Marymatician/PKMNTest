@@ -26,7 +26,6 @@ Species::Species(nlohmann::json dexInfo)
         abilityList[stringToAbilityEnum(i.key())] = i.value();
     }
 
-
     //gender ratio
     genderRatio = dexInfo.at("genderRatio");
     //height

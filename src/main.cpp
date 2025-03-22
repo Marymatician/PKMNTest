@@ -127,15 +127,15 @@ int main(int argc, char* args[])
 
             //////////////////////////////////////////////////////////////////////////////////////////
 
-            Pokemon allyMon("Blaziken");
+            Pokemon allyMon(JsonReader::fetchJsonListEntry("../../../res/TestMon.json", 0));
 
-            Pokemon enemyMon("Garchomp");
+            //Pokemon enemyMon("Garchomp");
             
             LTexture allyMonSprite;
             LTexture enemyMonSprite;
 
             PokemonTeam allyTeam(allyMon);
-            PokemonTeam enemyTeam(enemyMon);
+            //PokemonTeam enemyTeam(enemyMon);
 
             allyMonSprite.loadFromFile(gRenderer, "../../../res/Blaziken.png");
             enemyMonSprite.loadFromFile(gRenderer, "../../../res/Garchomp.png");
