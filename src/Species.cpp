@@ -1,9 +1,6 @@
 #include "Species.h"
 
-Species::Species()
-{
-
-}
+Species::Species() {}
 
 Species::Species(nlohmann::json dexInfo)
 {
@@ -12,7 +9,7 @@ Species::Species(nlohmann::json dexInfo)
 
     // A for loop goes over the typeline, converting them to enums and adding them to the typeline.
     for (std::string dexInfoType: dexInfo.at("types")) {
-        typeline.push_back(typesMap[dexInfoType]);
+        typeline.push_back(stringToType(dexInfoType));
     }
      
     //base stats
@@ -23,14 +20,12 @@ Species::Species(nlohmann::json dexInfo)
     SPD = dexInfo.at("baseStats")["SPD"];
     SPE = dexInfo.at("baseStats")["SPE"];
 
-    //For each line of ability string convert
-    for (std::pair<AbilityEnum, std::string> i : abilityStringConvert) {
-        //if the abilities line of the dex info contains [0/1/H]
-        if (dexInfo.at("abilities").contains(std::get<1>(i))) {
-            //Append an ability to our ability list, with an Enum key, and the ability value.
-            abilityList[std::get<0>(i)] = dexInfo.at("abilities")[std::get<1>(i)];
-        }
+    //For each ability in the line of abilities
+    for (auto i = dexInfo.at("abilities").begin(); i != dexInfo.at("abilities").end(); ++i) {
+        //add a line to our ability list, a map with a key of ability_enum and a value of, currently, a string.
+        abilityList[stringToAbilityEnum(i.key())] = i.value();
     }
+
 
     //gender ratio
     genderRatio = dexInfo.at("genderRatio");
@@ -41,7 +36,7 @@ Species::Species(nlohmann::json dexInfo)
 
     //For each egg group, converts it to an enum and then stores it.
     for (std::string dexInfoEggGroup: dexInfo.at("eggGroups")) {
-        eggGroups.push_back(eggGroupsMap[dexInfoEggGroup]);
+        eggGroups.push_back(stringToGroup(dexInfoEggGroup));
     }
 }
 

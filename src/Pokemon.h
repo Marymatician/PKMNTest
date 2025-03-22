@@ -2,7 +2,9 @@
 #define Pokemon_H
 
 #include <string>
+#include "Abilities.h"
 #include "Species.h"
+#include "Nature.h"
 
 //A class representing all the attributes a Pokemon has.
 class Pokemon
@@ -26,47 +28,12 @@ class Pokemon
     int xp;
 
     //its ability, represented as an enum.
-    enum class AbilityEnum
-    {
-        ABILITY_1,
-        ABILITY_2,
-        HIDDEN_ABILITY
-    };
     AbilityEnum ability;
 
     //Is it shiny?
     bool shiny;
 
     //Its nature, represented as an Enum.
-    enum class Nature
-    {
-        ADAMANT,
-        BASHFUL,
-        BOLD,
-        BRAVE,
-        CALM,
-        CAREFUL,
-        DOCILE,
-        GENTLE,
-        HARDY,
-        HASTY,
-        IMPISH,
-        JOLLY,
-        LAX,
-        LONELY,
-        MILD,
-        MODEST,
-        NAIVE,
-        NAUGHTY,
-        QUIET,
-        QUIKRY,
-        RASH,
-        RELAXED,
-        SASSY,
-        SERIOUS,
-        TIMID,
-        NONE
-    };
     Nature nature;
 
     //its gender
