@@ -1,23 +1,22 @@
 #include "PokemonTeam.h"
 
-PokemonTeam::PokemonTeam(std::optional<Pokemon> Pokemon1, std::optional<Pokemon> Pokemon2)
+PokemonTeam::PokemonTeam()
 {
     team.reserve(6);
-    
-    if (Pokemon1)
-    {
-        team.push_back(Pokemon1.value());
-    }
-
-    if (Pokemon2)
-    {
-        team.push_back(Pokemon2.value());
-    }
 }
 
 PokemonTeam::~PokemonTeam()
 {
 
+}
+
+void PokemonTeam::teamFromJSON(nlohmann::json jsonArray)
+{
+    //for each pokemon in the json array
+    for (auto i = jsonArray.begin(); i != jsonArray.end(); i++) {
+        //create an appropriate Pokemon, and add it to the team.
+        team.push_back(Pokemon(i.value()));
+    }
 }
 
 Pokemon PokemonTeam::operator[](int pos)

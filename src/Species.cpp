@@ -27,7 +27,7 @@ Species::Species(nlohmann::json dexInfo)
     }
 
     //gender ratio
-    genderRatio = dexInfo.at("genderRatio");
+    genderRatio = dexInfo.value("genderRatio", 0.5);
     //height
     height = dexInfo.at("height");
     //weight

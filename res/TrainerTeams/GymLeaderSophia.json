@@ -1,0 +1,69 @@
+[
+    {
+        "species" : "Pelipper",
+        "ability" : "1",
+        "heldItem" : "Damp Rock",
+        "EVs" : {"HP" : 252, "SPA" : 4, "DEF" : 252},
+        "IVs" : {"ATK" : 0},
+        "nature" : "Bold",
+        "moves" : ["Weather Ball", "Hurricane", "Reflect", "Roost"],
+        "gender" : "F",
+        "level" : 50
+    },
+    {
+        "species" : "Kingdra",
+        "ability" : "0",
+        "heldItem" : "Life Orb",
+        "EVs" : {"SPA" : 252, "SPE" : 252, "HP" : 4},
+        "IVs" : {"ATK" : 0},
+        "nature" : "Modest",
+        "moves" : ["Scald", "Dragon Pulse", "Ice Beam", "Flash Cannon"],
+        "gender" : "M",
+        "level" : 50
+    },
+    {
+        "species" : "Gastrodon",
+        "forme" : "west",
+        "ability" : "1",
+        "heldItem" : "Leftovers",
+        "EVs" : {"HP" : 252, "SPD" : 252, "DEF" : 4},
+        "IVs" : {},
+        "nature" : "Sassy",
+        "moves" : ["Muddy Water", "Earthquake", "Toxic", "Recover"],
+        "gender" : "F",
+        "level" : 50
+    },
+    {
+        "species" : "Ludicolo",
+        "ability" : "1",
+        "heldItem" : "Rocky Helmet",
+        "EVs" : {"HP" : 252, "DEF" : 252, "SPA" : 4},
+        "IVs" : {"ATK" : 0},
+        "nature" : "Bold",
+        "moves" : ["Scald", "Giga Drain", "Rain Dance", "Amnesia"],
+        "gender" : "M",
+        "level" : 50
+    },
+    {
+        "species" : "Empoleon",
+        "ability" : "H",
+        "heldItem" : "Waterium Z",
+        "EVs" : {"HP" : 144, "SPA" : 252, "SPD" : 112},
+        "IVs" : {"ATK" : 0},
+        "nature" : "Modest",
+        "moves" : ["Surf", "Flash Cannon", "Ice Beam", "Roost"],
+        "gender" : "F",
+        "level" : 50
+    },
+    {
+        "species" : "Azumarill",
+        "ability" : "1",
+        "heldItem" : "Choice Band",
+        "EVs" : {"ATK" : 252, "SPE" : 252, "HP" : 4},
+        "IVs" : {},
+        "nature" : "Adamant",
+        "moves" : ["Play Rough", "Liquidation", "Knock Off", "Aqua Jet"],
+        "gender" : "F",
+        "level" : 50
+    }
+]

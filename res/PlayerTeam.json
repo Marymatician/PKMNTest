@@ -1,0 +1,68 @@
+[
+    {
+        "species" : "Blaziken",
+        "ability" : "H",
+        "heldItem" : "Fightinium Z",
+        "EVs" : {"ATK" : 252, "SPE" : 252, "HP" : 4},
+        "IVs" : {},
+        "nature" : "Jolly",
+        "moves" : ["Close Combat", "Flare Blitz", "Swords Dance", "Protect"],
+        "gender" : "M",
+        "level" : 50
+    },
+    {
+        "species" : "Garchomp",
+        "ability" : "H",
+        "heldItem" : "Life Orb",
+        "EVs" : {"HP": 120, "ATK" : 252, "DEF" : 136},
+        "IVs" : {},
+        "nature" : "Adamant",
+        "moves" : ["Outrage", "Earthquake", "Crunch", "Poison Jab"],
+        "gender" : "F",
+        "level" : 50
+    },
+    {
+        "species" : "Luxray",
+        "ability" : "H",
+        "heldItem" : "Flame Orb",
+        "EVs" : {"ATK" : 252, "SPE" : 252, "HP" : 4},
+        "IVs" : {},
+        "nature" : "Hasty",
+        "moves" : ["Wild Charge", "Crunch", "Volt Switch", "Light Screen"],
+        "gender" : "F",
+        "level" : 50
+    },
+    {
+        "species" : "Tangrowth",
+        "ability" : "H",
+        "heldItem" : "Rocky Helmet",
+        "EVs" : {"HP" : 252, "DEF" : 252, "SPD" : 4},
+        "IVs" : {},
+        "nature" : "Relaxed",
+        "moves" : ["Giga Drain", "Knock Off", "Leech Seed", "Sleep Powder"],
+        "gender" : "M",
+        "level" : 50
+    },
+    {
+        "species" : "Espeon",
+        "ability" : "H",
+        "heldItem" : "Choice Specs",
+        "EVs" : {"SPA" : 252, "SPE" : 252, "DEF" : 4},
+        "IVs" : {"ATK" : 0},
+        "nature" : "Timid",
+        "moves" : ["Psychic", "Shadow Ball", "Dazzling Gleam", "Trick"],
+        "gender" : "F",
+        "level" : 50
+    },
+    {
+        "species" : "Umbreon",
+        "ability" : "0",
+        "heldItem" : "Leftovers",
+        "EVs" : {"HP" : 252, "SPD" : 252, "DEF" : 4},
+        "IVs" : {"ATK" : 0},
+        "nature" : "Calm",
+        "moves" : ["Wish", "Protect", "Toxic", "Foul Play"],
+        "gender" : "M",
+        "level" : 50
+    }
+]

@@ -5,7 +5,6 @@
         "types": ["Dragon", "Ground"],
         "baseStats": {"HP": 108, "ATK": 130, "DEF": 95, "SPA": 80, "SPD": 85, "SPE": 102},
         "abilities": {"0":"Sand Veil", "H":"Rough Skin"},
-        "genderRatio": 0.5,
         "height": 1.9,
         "weight": 95.0,
         "eggGroups": ["Monster", "Dragon"]
@@ -20,5 +19,109 @@
         "height": 1.9,
         "weight": 52.0,
         "eggGroups": ["Field"]
+    },
+    "Espeon" : {
+        "name" : "Espeon",
+        "dexNum" : 0,
+        "types" : ["Psychic"],
+        "baseStats" : {"HP" : 65, "ATK" : 65, "DEF" : 60, "SPA" : 130, "SPD" : 95, "SPE" : 110},
+        "abilities" : {"0" : "Sychronize", "H" : "Magic Bounce"},
+        "genderRatio" : 0.875,
+        "height": 0.9,
+        "weight": 26.5,
+        "eggGroups" : ["Field"]
+    },
+    "Umbreon" : {
+        "name" : "Umbreon",
+        "dexNum" : 0,
+        "types" : ["Dark"],
+        "baseStats" : {"HP" : 95, "ATK" : 65, "DEF" : 110, "SPA" : 60, "SPD" : 130, "SPE" : 65},
+        "abilities" : {"0" : "Sychronize", "H" : "Inner Focus"},
+        "genderRatio" : 0.875,
+        "height" : 1.0,
+        "weight" : 27.0,
+        "eggGroups" : ["Field"]
+    },
+    "Tangrowth" : {
+        "name":"Tangrowth",
+        "dexNum":0,
+        "types": ["Grass"],
+        "baseStats" : {"HP":100, "ATK":100, "DEF":100, "SPA":110, "SPD": 50, "SPE":50},
+        "abilities" : {"0":"Chlorophyll", "1" : "Leaf Guard", "H" : "Regenerator"},
+        "height": 2.0,
+        "weight": 128.6,
+        "eggGroups": ["Grass"]
+    },
+    "Luxray" : {
+        "name" : "Luxray",
+        "dexNum" : 0,
+        "types" : ["Electric"],
+        "baseStats" : {"HP" : 80, "ATK" : 120, "DEF" : 79, "SPA" : 95, "SPD" : 79, "SPE" : 70},
+        "abilities" : {"0" : "Rivalry", "1" : "Intimidate", "H" : "Guts"},
+        "height" : 1.4,
+        "weight" : 42.0,
+        "eggGroups" : ["Field"]
+    },
+    "Pelipper" : {
+        "name" : "Pelipper",
+        "dexNum" : 0,
+        "types" : ["Water", "Flying"],
+        "baseStats" : {"HP" : 60, "ATK" : 50, "DEF" : 100, "SPA" : 95, "SPD" : 70, "SPE" : 65},
+        "abilities" : {"0" : "Keen Eye", "1" : "Drizzle", "H" : "Rain Dish"},
+        "height" : 1.2,
+        "weight" : 28.0,
+        "eggGroups" : ["Water 1", "Flying"]
+    },
+    "Kingdra" : {
+        "name" : "Kingdra",
+        "dexNum" : 0,
+        "types" : ["Water", "Dragon"],
+        "baseStats" : {"HP" : 75, "ATK" : 95, "DEF" : 95, "SPA" : 95, "SPD" : 95, "SPE" : 85},
+        "abilities" : {"0" : "Swift Swim", "1" : "Sniper", "H" : "Damp"},
+        "height" : 1.8,
+        "weight" : 152.0,
+        "eggGroups" : ["Water 1", "Dragon"]
+    },
+    "Ludicolo" : {
+        "name" : "Ludicolo",
+        "dexNum" : 0,
+        "types" : ["Water", "Grass"],
+        "baseStats" : {"HP": 80, "ATK":70, "DEF" : 70, "SPA" : 90, "SPD" : 100, "SPE" : 70},
+        "abilities" : {"0" : "Swift Swim", "1" : "Rain Dish", "H" : "Own Tempo"},
+        "height" : 1.5,
+        "weight" : 55.0,
+        "eggGroups" : ["Water 1", "Grass"]
+    },
+    "Azumarill" : {
+        "name" : "Azumarill",
+        "dexNum" : 0,
+        "types" : ["Water", "Fairy"],
+        "baseStats" : {"HP" : 100, "ATK" : 50, "DEF" : 80, "SPA" : 60, "SPD" : 80, "SPE" : 50},
+        "abilities" : {"0" : "Thick Fat", "1" : "Huge Power", "H" : "Sap Sipper"},
+        "height" : 0.8,
+        "weight" : 28.5,
+        "eggGroups" : ["Water 1", "Fairy"]
+    },
+    "Empoleon" : {
+        "name" : "Empoleon",
+        "dexNum" : 0,
+        "types" : ["Water", "Steel"],
+        "baseStats" : {"HP" : 84, "ATK" : 86, "DEF" : 88, "SPA" : 111, "SPD" : 101, "SPE" : 60},
+        "abilities" : {"0" : "Torrent", "H" : "Competitive"},
+        "genderRatio" : 0.875,
+        "height" : 1.7,
+        "weight" : 84.5,
+        "eggGroups" : ["Water 1", "Field"]
+    },
+    "Gastrodon" : {
+        "name" : "Gastrodon",
+        "formeList" : ["East", "West"],
+        "dexNum" : 0,
+        "types" : ["Water", "Ground"],
+        "baseStats" : {"HP" : 111, "ATK" : 83, "DEF" : 68, "SPA" : 92, "SPD" : 82, "SPE" : 39},
+        "abilities" : {"0" : "Sticky Hold", "1" : "Storm Drain", "H" : "Sand Force"},
+        "height" : 0.9,
+        "weight" : 29.9,
+        "eggGroups" : ["Water 1", "Amorphous"]
     }
 }

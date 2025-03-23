@@ -1,9 +1,7 @@
 #ifndef PokemonTeam_H
 #define PokemonTeam_H
 
-
 #include <vector>
-#include <optional>
 
 #include "Pokemon.h"
 
@@ -11,13 +9,14 @@
 class PokemonTeam
 {
     public:
-
-    //Constructor
-    PokemonTeam(std::optional<Pokemon> Pokemon1 = std::nullopt, std::optional<Pokemon> Pokemon2 = std::nullopt);
+    PokemonTeam();
 
     //Deconstructor
     ~PokemonTeam();
 
+    //read team from JSON
+    void teamFromJSON(nlohmann::json jsonArray);
+    
     //Returns the pokemon at a given position
     Pokemon operator[](int pos);
 

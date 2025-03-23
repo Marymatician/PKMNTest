@@ -127,18 +127,17 @@ int main(int argc, char* args[])
 
             //////////////////////////////////////////////////////////////////////////////////////////
 
-            Pokemon allyMon(JsonReader::fetchJsonListEntry("../../../res/TestMon.json", 0));
+            PokemonTeam allyTeam;
+            allyTeam.teamFromJSON(JsonReader::fetchJson("../../../res/PlayerTeam.json"));
 
-            //Pokemon enemyMon("Garchomp");
-            
+            PokemonTeam enemyTeam;
+            enemyTeam.teamFromJSON(JsonReader::fetchJson("../../../res/TrainerTeams/GymLeaderSophia.json"));
+
             LTexture allyMonSprite;
             LTexture enemyMonSprite;
 
-            PokemonTeam allyTeam(allyMon);
-            //PokemonTeam enemyTeam(enemyMon);
-
-            allyMonSprite.loadFromFile(gRenderer, "../../../res/Blaziken.png");
-            enemyMonSprite.loadFromFile(gRenderer, "../../../res/Garchomp.png");
+            //allyMonSprite.loadFromFile(gRenderer, "../../../res/Blaziken.png");
+            //enemyMonSprite.loadFromFile(gRenderer, "../../../res/Garchomp.png");
 
             //////////////////////////////////////////////////////////////////////////////////////////
 
