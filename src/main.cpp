@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string>
 
-#include "Pokemon.h"
+#include "BattleController.h"
 #include "PokeDex.h"
 #include "PokemonTeam.h"
 #include "LTexture.h"
@@ -132,6 +132,8 @@ int main(int argc, char* args[])
 
             PokemonTeam enemyTeam;
             enemyTeam.teamFromJSON(JsonReader::fetchJson("../../../res/TrainerTeams/GymLeaderSophia.json"));
+
+            BattleController(allyTeam, enemyTeam);
 
             LTexture allyMonSprite;
             LTexture enemyMonSprite;

@@ -6,6 +6,7 @@
 #include "Species.h"
 #include "Nature.h"
 #include "Gender.h"
+#include "Stats.h"
 
 //A class representing all the attributes a Pokemon has.
 class Pokemon
@@ -16,6 +17,8 @@ class Pokemon
 
     //Deallocate Memory
     ~Pokemon();
+
+    int deriveStat();
 
     private:
     //The species of the Pokemon, my Species class
