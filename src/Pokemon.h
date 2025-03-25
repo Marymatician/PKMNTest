@@ -2,6 +2,7 @@
 #define Pokemon_H
 
 #include <string>
+#include <cmath>
 #include "Abilities.h"
 #include "Species.h"
 #include "Nature.h"
@@ -18,7 +19,7 @@ class Pokemon
     //Deallocate Memory
     ~Pokemon();
 
-    int deriveStat();
+    int deriveStat(Stats statEnum);
 
     private:
     //The species of the Pokemon, my Species class
@@ -37,20 +38,10 @@ class Pokemon
     Gender gender;
 
     //Its IVs
-    int HPIV;
-    int ATKIV;
-    int DEFIV;
-    int SPAIV;
-    int SPDIV;
-    int SPEIV;
+    std::vector <int> IVs;
 
     //Its EVs
-    int HPEV;
-    int ATKEV;
-    int DEFEV;
-    int SPAEV;
-    int SPDEV;
-    int SPEEV;
+    std::vector <int> EVs;
 
     //The level of the Pokemon
     int level;

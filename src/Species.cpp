@@ -13,12 +13,9 @@ Species::Species(nlohmann::json dexInfo)
     }
      
     //base stats
-    HP = dexInfo.at("baseStats")["HP"];
-    ATK = dexInfo.at("baseStats")["ATK"];
-    DEF = dexInfo.at("baseStats")["DEF"];
-    SPA = dexInfo.at("baseStats")["SPA"];
-    SPD = dexInfo.at("baseStats")["SPD"];
-    SPE = dexInfo.at("baseStats")["SPE"];
+    for (auto const& [key, val] : enumToStatStringMap) {
+        statline.push_back(dexInfo.at("baseStats")[val]);
+    }
 
     //For each ability in the line of abilities
     for (auto i = dexInfo.at("abilities").begin(); i != dexInfo.at("abilities").end(); ++i) {
@@ -42,4 +39,9 @@ Species::Species(nlohmann::json dexInfo)
 Species::~Species()
 {
 
+}
+
+std::vector <int> Species::returnStats()
+{
+    return statline;
 }

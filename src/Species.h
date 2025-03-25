@@ -9,6 +9,7 @@
 #include "Types.h"
 #include "Abilities.h"
 #include "EggGroups.h"
+#include "Stats.h"
 
 class Species
 {
@@ -17,6 +18,8 @@ class Species
     Species(nlohmann::json dexInfo);
 
     ~Species();
+
+    std::vector<int> returnStats();
 
     private:
     //The name of the species, represented as a string. Maybe this could be an Enum? For now, a string is fine.
@@ -29,12 +32,7 @@ class Species
     std::vector <Type> typeline;
 
     //The base stats of the species.
-    int HP;
-    int ATK;
-    int DEF;
-    int SPA;
-    int SPD;
-    int SPE;
+    std::vector <int> statline;
 
     //A map of the enums of ability 1, 2, hidden, to the string name of that ability. Later, should be ability class?
     std::map <AbilityEnum, std::string> abilityList;
