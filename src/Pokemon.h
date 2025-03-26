@@ -8,6 +8,7 @@
 #include "Nature.h"
 #include "Gender.h"
 #include "Stats.h"
+#include "Status.h"
 
 //A class representing all the attributes a Pokemon has.
 class Pokemon
@@ -15,11 +16,16 @@ class Pokemon
     public:
     //Initialize the class
     Pokemon(nlohmann::json JSONMon);
+    Pokemon();
 
     //Deallocate Memory
     ~Pokemon();
 
     int deriveStat(Stats statEnum);
+
+    Status getStatus();
+
+    std::vector<int> getStatline();
 
     private:
     //The species of the Pokemon, my Species class
@@ -49,6 +55,8 @@ class Pokemon
     int xp;
     //Is it shiny?
     bool shiny;
+
+    Status status;
 };
 
 #endif

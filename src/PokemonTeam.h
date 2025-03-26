@@ -17,6 +17,8 @@ class PokemonTeam
     //read team from JSON
     void teamFromJSON(nlohmann::json jsonArray);
     
+    Pokemon& fetchLead();
+
     //Returns the pokemon at a given position
     Pokemon operator[](int pos);
 

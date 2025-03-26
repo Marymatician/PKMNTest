@@ -41,11 +41,17 @@ Pokemon::Pokemon(nlohmann::json JSONMon)
     //Shiny
     shiny = JSONMon.value("shiny", false);
 
-    //Status - not implemented yet
+    //Status - this will crash as soon as I have real statuses involved, but it runs for now.
+    status = stringToStatusEnum(JSONMon.value("status", "None"));
 
     //Damage Taken - not implemented yet
 
     //Moves - not implemented yet
+}
+
+Pokemon::Pokemon()
+{
+
 }
 
 Pokemon::~Pokemon()
@@ -75,4 +81,20 @@ int Pokemon::deriveStat(Stats statEnum)
         returnValue = floor(returnValue * natureModifier);
     }
     return returnValue;
+}
+
+std::vector <int> Pokemon::getStatline()
+{
+    std::vector<int> returnVector;
+
+    for (auto const& [key, val] : enumToStatStringMap) {
+        returnVector.push_back(deriveStat(key));
+    }
+
+    return returnVector;
+}
+
+Status Pokemon::getStatus()
+{
+    return status;
 }
