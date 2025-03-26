@@ -15,8 +15,6 @@ Pokemon::Pokemon(nlohmann::json JSONMon)
     //Ability - takes the string value and converts it to an ENUM.
     ability = stringToAbilityEnum(JSONMon.at("ability"));
 
-    //Held item - not implemented yet
-
     //EVS
     //for each line of the enumToStatStringMap
     for (auto const& [key, val] : enumToStatStringMap) {
@@ -43,6 +41,8 @@ Pokemon::Pokemon(nlohmann::json JSONMon)
 
     //Status - this will crash as soon as I have real statuses involved, but it runs for now.
     status = stringToStatusEnum(JSONMon.value("status", "None"));
+
+    //Held item - not implemented yet
 
     //Damage Taken - not implemented yet
 
