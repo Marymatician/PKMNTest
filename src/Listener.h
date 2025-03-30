@@ -3,8 +3,6 @@
 
 #include <SDL2/SDL.h>
 #include <vector>
-#include "loopfunctions/InputHandler.h"
-#include "loopfunctions/HandlerRegistry.h"
 
 class Listener
 {

@@ -1,4 +1,6 @@
 #include "Listener.h"
+#include "loopfunctions/InputHandler.h"
+#include "loopfunctions/HandlerRegistry.h"
 
 void Listener::createHandler(std::vector<SDL_EventType> wantedInputs)
 {
