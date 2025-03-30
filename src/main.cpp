@@ -7,6 +7,10 @@
 #include "PokeDex.h"
 #include "PokemonTeam.h"
 #include "LTexture.h"
+#include "loopfunctions/Update.h"
+#include "loopfunctions/Render.h"
+#include "loopfunctions/Delay.h"
+#include "TestListener.h"
 
 //Screen dimensions
 const int SCREEN_WIDTH = 256;
@@ -70,27 +74,6 @@ bool init()
     return success;
 }
 
-bool loadMedia()
-{
-    //loading success flag
-    bool success = true;
-
-    //Load PNG texture
-
-    // if(!gTexture.loadFromFile(gRenderer, "../../../res/garchomp.png"))
-    // {
-    //     printf("Failed to load texture image!\n");
-    //     success = false;
-    // }
-    // else if(!bTexture.loadFromFile(gRenderer, "../../../res/blaziken.png"))
-    // {
-    //     printf("Failed to load texture image!\n");
-    //     success = false;
-    // }
-
-    return success;
-}
-
 void cleanup()
 {
     //Destroy Window
@@ -112,64 +95,38 @@ int main(int argc, char* args[])
     }
     else
     {
-        //Load media
-        if( !loadMedia())
+        //Main loop flag
+        bool quit = false;
+
+        //Event Handler
+        SDL_Event e;
+
+        //Test Listener
+        TestListener testListener;
+
+        //PokemonTeam allyTeam;
+        //allyTeam.teamFromJSON(JsonReader::fetchJson("../../../res/PlayerTeam.json"));
+
+        //PokemonTeam enemyTeam;
+        //enemyTeam.teamFromJSON(JsonReader::fetchJson("../../../res/TrainerTeams/GymLeaderSophia.json"));
+
+        //BattleController(allyTeam, enemyTeam);
+
+        //While  running
+        while  (!quit)
         {
-            printf("Failed to load media!\n");
+            //update - takes player inputs, actions them, performs all game logic
+            quit = update(e);
+
+            quit = testListener.queryQuit();
+            
+            //render - shows the newly updated screen!
+            render(gRenderer);
+
+            //delay - ensure this loop runs once every 1/60th of a second. SDL can handle this with .getPerformanceCounter()
+            delay();
         }
-        else
-        {
-            //Main loop flag
-            bool quit = false;
-
-            //Event Handler
-            SDL_Event e;
-
-            //////////////////////////////////////////////////////////////////////////////////////////
-
-            PokemonTeam allyTeam;
-            allyTeam.teamFromJSON(JsonReader::fetchJson("../../../res/PlayerTeam.json"));
-
-            PokemonTeam enemyTeam;
-            enemyTeam.teamFromJSON(JsonReader::fetchJson("../../../res/TrainerTeams/GymLeaderSophia.json"));
-
-            BattleController(allyTeam, enemyTeam);
-
-            LTexture allyMonSprite;
-            LTexture enemyMonSprite;
-
-            //allyMonSprite.loadFromFile(gRenderer, "../../../res/Blaziken.png");
-            //enemyMonSprite.loadFromFile(gRenderer, "../../../res/Garchomp.png");
-
-            //////////////////////////////////////////////////////////////////////////////////////////
-
-            //While  running
-            while  (!quit)
-            {
-                //handle a queue of events
-                while(SDL_PollEvent(&e)!=0)
-                {
-                    //if quit
-                    if(e.type == SDL_QUIT)
-                    {
-                        quit = true;
-                    }
-                }
-                //Clear screen
-                SDL_SetRenderDrawColor(gRenderer, 0x00, 0x00, 0x00, 0xFF);
-                SDL_RenderClear(gRenderer);
-                
-                //render texture to screen
-                allyMonSprite.render(gRenderer, 0, 112);
-                enemyMonSprite.render(gRenderer, 150,10);
-
-                //Update Screen
-                SDL_RenderPresent(gRenderer);
-            }
-
-            allyMonSprite.free();
-            enemyMonSprite.free();
-        }
+        
     }
 
     cleanup();

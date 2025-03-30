@@ -29,4 +29,5 @@ bool BattleController::BattleLoop()
 
         //if a pokemon has fainted, their controller may switch in a new pokemon if able. If unable, they lose.
     }
+    return false;
 }
