@@ -39,7 +39,7 @@ Pokemon::Pokemon(nlohmann::json JSONMon)
     //Shiny
     shiny = JSONMon.value("shiny", false);
 
-    //Status - this will crash as soon as I have real statuses involved, but it runs for now.
+    //Status
     status = stringToStatusEnum(JSONMon.value("status", "None"));
 
     //Held item - not implemented yet
@@ -47,6 +47,10 @@ Pokemon::Pokemon(nlohmann::json JSONMon)
     //Damage Taken - not implemented yet
 
     //Moves - not implemented yet
+    for (std::string moveString : JSONMon.at("moves"))
+    {
+        moveSet.push_back(Move(moveString));
+    }
 }
 
 Pokemon::Pokemon()

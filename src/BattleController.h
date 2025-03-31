@@ -15,7 +15,7 @@ class BattleController
     //Deconstructor
     ~BattleController();
 
-    bool BattleLoop();
+    void startBattle();
 
     private:
     //The allyTeam and enemyTeam, objects of my custom class PokemonTeam. Vectors inside. These SHOULD be references?
@@ -39,9 +39,6 @@ class BattleController
     };
 
     WeatherConditions weather;
-
-    //is the battle ongoing
-    bool battleFinished;
 };
 
 #endif

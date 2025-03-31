@@ -4,7 +4,6 @@
 #include <string>
 #include <vector>
 #include <map>
-#include <nlohmann/json.hpp>
 #include "PokeDex.h"
 #include "Types.h"
 #include "Abilities.h"

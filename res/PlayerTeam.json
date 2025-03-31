@@ -1,5 +1,16 @@
 [
     {
+        "species" : "Garchomp",
+        "ability" : "H",
+        "heldItem" : "Life Orb",
+        "EVs" : {"HP": 120, "ATK" : 252, "DEF" : 136},
+        "IVs" : {},
+        "nature" : "Adamant",
+        "moves" : ["Earthquake", "Outrage", "Crunch", "Poison Jab"],
+        "gender" : "F",
+        "level" : 50
+    },
+    {
         "species" : "Blaziken",
         "ability" : "H",
         "heldItem" : "Fightinium Z",
@@ -8,17 +19,6 @@
         "nature" : "Jolly",
         "moves" : ["Close Combat", "Flare Blitz", "Swords Dance", "Protect"],
         "gender" : "M",
-        "level" : 50
-    },
-    {
-        "species" : "Garchomp",
-        "ability" : "H",
-        "heldItem" : "Life Orb",
-        "EVs" : {"HP": 120, "ATK" : 252, "DEF" : 136},
-        "IVs" : {},
-        "nature" : "Adamant",
-        "moves" : ["Outrage", "Earthquake", "Crunch", "Poison Jab"],
-        "gender" : "F",
         "level" : 50
     },
     {

@@ -10,7 +10,6 @@
 #include "loopfunctions/Update.h"
 #include "loopfunctions/Render.h"
 #include "loopfunctions/Delay.h"
-#include "TestListener.h"
 
 //Screen dimensions
 const int SCREEN_WIDTH = 256;
@@ -101,24 +100,18 @@ int main(int argc, char* args[])
         //Event Handler
         SDL_Event e;
 
-        //Test Listener
-        TestListener testListener;
+        PokemonTeam allyTeam;
+        allyTeam.teamFromJSON(JsonReader::fetchJson("../../../res/PlayerTeam.json"));
 
-        //PokemonTeam allyTeam;
-        //allyTeam.teamFromJSON(JsonReader::fetchJson("../../../res/PlayerTeam.json"));
-
-        //PokemonTeam enemyTeam;
-        //enemyTeam.teamFromJSON(JsonReader::fetchJson("../../../res/TrainerTeams/GymLeaderSophia.json"));
-
-        //BattleController(allyTeam, enemyTeam);
-
+        PokemonTeam enemyTeam;
+        enemyTeam.teamFromJSON(JsonReader::fetchJson("../../../res/TrainerTeams/GymLeaderSophia.json"));
+        
+        BattleController(allyTeam, enemyTeam);
         //While  running
         while  (!quit)
         {
             //update - takes player inputs, actions them, performs all game logic
             quit = update(e);
-
-            quit = testListener.queryQuit();
             
             //render - shows the newly updated screen!
             render(gRenderer);

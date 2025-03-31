@@ -9,6 +9,7 @@
 #include "Gender.h"
 #include "Stats.h"
 #include "Status.h"
+#include "Move.h"
 
 //A class representing all the attributes a Pokemon has.
 class Pokemon
@@ -57,6 +58,9 @@ class Pokemon
     bool shiny;
 
     Status status;
+
+    //moves
+    std::vector <Move> moveSet;
 };
 
 #endif

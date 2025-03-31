@@ -1,0 +1,10 @@
+{
+    "Earthquake" : {
+        "name" : "Earthquake",
+        "type" : "Ground",
+        "cat" : "Physical",
+        "BP" : 100,
+        "PP" : 5,
+        "acc" : 100
+    }
+}

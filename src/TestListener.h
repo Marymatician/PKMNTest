@@ -4,16 +4,16 @@
 #include "Listener.h"
 #include <SDL2/SDL.h>
 #include "loopfunctions/InputHandler.h"
+#include "BattleController.h"
 
 class TestListener: public Listener
 {
     public:
-    TestListener();
+    TestListener(BattleController& parentBattle);
     ~TestListener();
     void receiveInput(SDL_Event& receivedEvent);
-    bool queryQuit();
     private:
-    bool quitValue;
+    BattleController& parentBattle;
 };
 
 #endif
