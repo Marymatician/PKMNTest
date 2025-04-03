@@ -22,5 +22,11 @@ Move::Move(std::string moveString) {
         category = stringToMoveCategory(JSONMove.at("cat"));
     } else {
         //If the move called doesn't exist, catch it here.
+        name = "MissingMove";
+        type = Type::NONE;
+        BP = 0;
+        PP = 0;
+        acc = 0;
+        category = MoveCategory::STATUS;
     }
 }

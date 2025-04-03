@@ -2,7 +2,7 @@
 #define Pokemon_H
 
 #include <string>
-#include <cmath>
+
 #include "Abilities.h"
 #include "Species.h"
 #include "Nature.h"

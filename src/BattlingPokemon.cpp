@@ -9,3 +9,8 @@ BattlingPokemon::BattlingPokemon(Pokemon &activeMon) : activeMon(activeMon)
 BattlingPokemon::~BattlingPokemon() {}
 
 BattlingPokemon::BattlingPokemon() {}
+
+void BattlingPokemon::selectMove(int moveChoice)
+{
+    selectedMove = moveChoice;
+}

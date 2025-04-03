@@ -16,6 +16,6 @@ void TestListener::receiveInput(SDL_Event& receivedEvent)
 {
     if (receivedEvent.type == SDL_MOUSEBUTTONDOWN)
     {
-        parentBattle.startBattle();
+        parentBattle.selectMove(1);
     }
 }

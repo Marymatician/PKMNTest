@@ -1,5 +1,7 @@
 #include "Pokemon.h"
 
+#include <cmath>
+
 Pokemon::Pokemon(nlohmann::json JSONMon)
 {
     //finds the singleton Pokedex, and asks the Pokedex to fetch all the species stats for the species of the given JSON file.

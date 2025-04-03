@@ -11,6 +11,12 @@
 #include "loopfunctions/Render.h"
 #include "loopfunctions/Delay.h"
 
+#include "Random.h"
+
+Rand myRand;
+int x = myRand.randint(1,10);
+
+
 //Screen dimensions
 const int SCREEN_WIDTH = 256;
 const int SCREEN_HEIGHT = 192;
@@ -94,7 +100,7 @@ int main(int argc, char* args[])
     }
     else
     {
-        //Main loop flag
+        //Main loop fla2^32g
         bool quit = false;
 
         //Event Handler
@@ -106,7 +112,7 @@ int main(int argc, char* args[])
         PokemonTeam enemyTeam;
         enemyTeam.teamFromJSON(JsonReader::fetchJson("../../../res/TrainerTeams/GymLeaderSophia.json"));
         
-        BattleController(allyTeam, enemyTeam);
+        BattleController savedController(allyTeam, enemyTeam);
         //While  running
         while  (!quit)
         {

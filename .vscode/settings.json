@@ -62,6 +62,7 @@
         "iomanip": "cpp",
         "ranges": "cpp",
         "sstream": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "chrono": "cpp"
     }
 }

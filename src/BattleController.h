@@ -17,6 +17,12 @@ class BattleController
 
     void startBattle();
 
+    void startTurn();
+
+    //int is temporary, this will probably be an enum of all possible moves eventually
+    void selectMove(int moveChoice);
+
+    void postDecision();
     private:
     //The allyTeam and enemyTeam, objects of my custom class PokemonTeam. Vectors inside. These SHOULD be references?
     PokemonTeam& allyTeam;
